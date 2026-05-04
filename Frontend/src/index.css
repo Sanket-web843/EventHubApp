@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Standard CSS variables for the Midnight theme */
+:root {
+  color-scheme: dark;
+}
+
+/* Force the background and text color to match EventHub vibe */
+@layer base {
+  html, body {
+    background-color: #0f172a !important; /* Deep Navy */
+    color: #f8fafc; /* Off-white text */
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+}
