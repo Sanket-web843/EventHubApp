@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <div>
-      <Navbar />
       <main className="pt-20">
         <Banner />
         <Freeevents />

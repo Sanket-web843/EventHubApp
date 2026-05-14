@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
+import axios from "axios";
 
 function Freeevents() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("/list.json")
-      .then((res) => res.json())
-      .then((data) => setEvents(data))
-      .catch((err) => console.error("Error loading JSON:", err));
+    axios.get("http://localhost:4001/api/events/all")
+      .then((res) => setEvents(res.data))
+      .catch((err) => console.error("Error loading events:", err));
   }, []);
 
   // Filter for Free events (Price = 0)
@@ -36,7 +36,7 @@ function Freeevents() {
           <div className="py-10 text-gray-500 italic">No free events scheduled currently.</div>
         ) : (
           freeEvents.map((item) => (
-            <div key={item.id} className="min-w-[85%] md:min-w-[380px] snap-start flex">
+            <div key={item._id} className="min-w-[85%] md:min-w-[380px] snap-start flex">
                <Card item={item} />
             </div>
           ))

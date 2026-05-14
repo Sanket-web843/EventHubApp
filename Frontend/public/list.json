@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "eventId": 1,
     "title": "Tantra",
     "description": "Players work in teams of 2. One is blindfolded, the other guides them to write code.",
     "organizer": "Sanket Pawar",
@@ -17,7 +17,7 @@
     "joined_count": 45
   },
   {
-    "id": 2,
+    "eventId": 2,
     "title": "Fun Game",
     "description": "Team-based blindfold coding challenge focused on logic and teamwork.",
     "organizer": "Sanket Pawar",
@@ -34,7 +34,7 @@
     "joined_count": 32
   },
   {
-    "id": 3,
+    "eventId": 3,
     "title": "Craft Event",
     "description": "Creative team-based activity involving manual design and quick thinking.",
     "organizer": "Sanket Pawar",
@@ -51,7 +51,7 @@
     "joined_count": 28
   },
   {
-    "id": 4,
+    "eventId": 4,
     "title": "Esports Tournament",
     "description": "Competitive online gaming event featuring top-tier mobile and PC titles.",
     "organizer": "Sanket Pawar",
@@ -68,7 +68,7 @@
     "joined_count": 156
   },
   {
-    "id": 5,
+    "eventId": 5,
     "title": "Car Race",
     "description": "Exciting remote-controlled racing competition on a custom track.",
     "organizer": "Sanket Pawar",
@@ -85,7 +85,7 @@
     "joined_count": 64
   },
   {
-    "id": 6,
+    "eventId": 6,
     "title": "Desk Game",
     "description": "Indoor competitive games testing concentration and physical coordination.",
     "organizer": "Sanket Pawar",
@@ -102,7 +102,7 @@
     "joined_count": 42
   },
   {
-    "id": 7,
+    "eventId": 7,
     "title": "Tournament",
     "description": "Competitive multi-stage tournament for various campus-wide sports.",
     "organizer": "Sanket Pawar",
@@ -119,7 +119,7 @@
     "joined_count": 210
   },
   {
-    "id": 8,
+    "eventId": 8,
     "title": "React Workshop",
     "description": "Deep dive into React basics and building modern web applications with Vite.",
     "organizer": "Sanket Pawar",
@@ -136,7 +136,7 @@
     "joined_count": 88
   },
   {
-    "id": 9,
+    "eventId": 9,
     "title": "Hackathon 2026",
     "description": "24-hour coding event to build innovative solutions for local campus problems.",
     "organizer": "Sanket Pawar",

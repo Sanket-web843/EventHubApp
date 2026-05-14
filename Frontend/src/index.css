@@ -6,7 +6,6 @@
   color-scheme: dark;
 }
 
-/* Force the background and text color to match EventHub vibe */
 @layer base {
   html, body {
     background-color: #0f172a !important; /* Deep Navy */
@@ -14,4 +13,50 @@
     min-height: 100vh;
     font-family: sans-serif;
   }
+}
+
+/* Force the background and text color to match EventHub vibe */
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  .animate-zoomIn {
+    animation: zoomIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

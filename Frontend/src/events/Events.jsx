@@ -8,7 +8,6 @@ import Footer from '../components/Footer'
 function Events() {
   return (
     <>
-      <Navbar />
       {/* Added padding-top so the Navbar doesn't cover your events */}
       <div className="pt-20"> 
         <Event/>
