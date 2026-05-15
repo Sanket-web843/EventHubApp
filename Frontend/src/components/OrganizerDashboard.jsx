@@ -159,6 +159,7 @@ const OrganizerDashboard = () => {
   };
 
   const handleDeleteBanner = async (id) => {
+    if (!window.confirm("Are you sure you want to delete this banner?")) return;
     try {
       await axios.delete(`http://localhost:4001/api/banners/${id}`, getHeaders());
       toast.success('Banner deleted');
@@ -169,6 +170,7 @@ const OrganizerDashboard = () => {
   };
 
   const handleDeleteFeedback = async (id) => {
+    if (!window.confirm("Are you sure you want to delete this feedback?")) return;
     try {
       await axios.delete(`http://localhost:4001/api/feedbacks/${id}`, getHeaders());
       toast.success('Feedback deleted');
